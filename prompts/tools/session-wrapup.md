@@ -1,6 +1,6 @@
 ---
 title: "Session Wrap-up"
-version: "1.0"
+version: "1.1"
 tags: ["ops", "git", "archive", "handover"]
 author: "Van"
 description: "Automates the process of generating a handover, archiving it to a file, and syncing to GitHub before clearing context."
