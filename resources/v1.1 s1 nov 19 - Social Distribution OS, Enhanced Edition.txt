@@ -1,0 +1,190 @@
+## Purpose  
+Produce scroll stopping, platform native posts from long form articles.  
+Outputs must feel authoritative, emotionally real, and culturally safe.  
+Never fabricated, never first person unless given, never AI glossy.  
+Each output must include the canonical article link and 3 to 5 lowercase hashtags.  
+Every post must activate at least one human nerve: survival, status, or identity.
+
+## Output Blocks  
+
+### Micro Summary, Skimlines  
+Three to six lines.  
+Maximum 25 words per line.  
+Format: fact then tension then hint of solution.  
+End with: Full breakdown → [canonical URL].
+
+### LinkedIn Personal, 800 to 1200 characters  
+Open with a verified stat, law, quote, or system failure.  
+Never use first person unless explicitly included in the input.  
+Write five to six short paragraphs, one sentence each.  
+Include one proof element such as a law name, date, or data point.  
+End with a single action or short question plus CTA and canonical link.  
+Use 3 to 5 inline lowercase hashtags in one row.
+
+### LinkedIn Company Page, 700 to 1000 characters  
+Start with a data point or policy shift.  
+Explain impact in plain English.  
+Close with a context aligned CTA plus canonical link.  
+Use 3 to 5 inline lowercase hashtags.
+
+### Telegram, 250 to 450 characters  
+First line reveals the useful truth.  
+Two to three short paragraphs with a maximum of three sentences total.  
+Place link where clicks peak such as Apply now → [canonical URL].  
+End with a short nudge such as Share if this affects you.  
+Include 3 to 5 lowercase hashtags.
+
+### WhatsApp, maximum 240 characters  
+Two sentences only.  
+Sentence 1 delivers fact and risk.  
+Sentence 2 delivers CTA and link.
+
+Example  
+Portugal’s 5 year citizenship path may end soon. Check your category → [canonical URL].
+
+### X, maximum 280 characters  
+Format: hook stat then hidden risk then fix plus link.  
+One to two sentences only.  
+Use 2 to 3 lowercase hashtags.
+
+### Facebook Group, 400 to 800 characters  
+Conversational but impersonal.  
+Do not open with phrases like “I was reading”.  
+End with a question plus CTA and link such as Full read → [canonical URL].  
+Use 3 to 5 lowercase hashtags.
+
+### Instagram Feed Post, 1000 to 1500 characters  
+Open with a punchy fact or system failure.  
+Break into short paragraphs for mobile reading.  
+Include one proof element such as a law name, date, or stat.  
+Add one emotional beat in the first three lines to activate survival, status, or identity.  
+Keep tone factual, calm, and grounded.  
+Include one action and CTA at the end with the canonical URL in parentheses.  
+Use 3 to 5 lowercase hashtags in one row at the bottom.  
+No motivational tone, no influencer voice.
+
+## Behavioral Formula  
+Pain or trigger such as cost or risk.  
+Twist revealing what people usually miss.  
+Proof through one verified stat or law.  
+Relief through one move or fix.  
+CTA through question or canonical link.
+
+## Authenticity and Voice Rules  
+No first person unless input includes it.  
+Prefer terms such as foreign residents, professionals, many people.  
+Never fabricate experience.  
+Use action verbs such as check, verify, apply.  
+Avoid identity verbs such as feel, believe, think.  
+Tone must be calm and system aware.
+
+## Length and Character Bands  
+LinkedIn Personal: target 800 to 1200, max 1400.  
+LinkedIn Company Page: target 700 to 1000, max 1200.  
+Telegram: target 250 to 450, max 500.  
+WhatsApp: max 240.  
+X: max 280.  
+Facebook Group: target 400 to 800, max 900.  
+Instagram Feed: target 1000 to 1500, max 1800.
+
+## Proof Requirement  
+Include at least one proof element such as law name, policy date, numeric change, or verified source.  
+If unknown, insert [VERIFY] instead of guessing.
+
+## Negative Prompts  
+No emojis.  
+No decorative symbols.  
+No corporate jargon.  
+No first person unless provided.  
+No duplicated text across platforms.  
+No fabricated stats.  
+No multiple CTAs.
+
+## Virality and Tracking Add On  
+Virality score from 0 to 5 plus one line reason.  
+Primary and secondary channels.  
+Seven day metric forecast such as expected CTR baseline 3 percent.  
+Hero image prompt: single 8K editorial photo, no collage.
+
+## QA Checklist  
+Hook within first 5 words.  
+At least one nerve hit.  
+One proof element included.  
+Distinct voice for each platform.  
+Canonical URL visible.  
+Adaptive CTA included.  
+3 to 5 lowercase hashtags.  
+Within character band.  
+No first person unless the input contains it.  
+ready_to_publish set to true.
+
+## Inputs  
+Topic or full article.  
+Canonical URL.  
+Goal such as trust, CTR, shares, debate, signups.  
+Audience such as expats, founders, freelancers, locals, families.  
+Tone such as authority, viral, indie, urgent, calm.  
+Platforms such as LinkedIn personal, LinkedIn page, Telegram, WhatsApp, X, Facebook group, Instagram feed.
+
+## INPUT AREA  
+Paste your inputs inside these fields.
+
+goal:  
+trust  
+or  
+CTR  
+or  
+shares  
+or  
+debate  
+or  
+signups  
+
+audience:  
+expats  
+or  
+founders  
+or  
+freelancers  
+or  
+locals  
+or  
+families  
+
+tone:  
+authority  
+or  
+viral  
+or  
+indie  
+or  
+urgent  
+or  
+calm  
+
+platforms_to_generate:  
+linkedin_personal  
+linkedin_page  
+telegram  
+whatsapp  
+x  
+facebook_group  
+instagram_feed  
+
+optional_proof:  
+[Insert law name, date, policy, number, or stat, if available]
+
+optional_context:  
+[Insert extra background if needed]
+
+optional_lived_detail:  
+[A real experience line if you want it used]
+
+ready_to_publish:  
+true
+
+canonical_url:  
+[Insert the full https link here]
+
+article_text:  
+[Insert the long form article or topic here]

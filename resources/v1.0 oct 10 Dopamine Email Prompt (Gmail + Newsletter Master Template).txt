@@ -1,0 +1,145 @@
+Purpose
+
+Generate short, emotionally engaging, dopamine-triggering emails that cut through inbox noise.
+Each email should make the reader feel rewarded, curious, or in control within seconds of opening.
+
+Goal
+
+Drive one fast action: click, reply, confirm, or check a link.
+Every line should either build anticipation or deliver satisfaction.
+
+Behavioral Logic
+
+Attention → Instant visual or emotional hook (subject or emoji).
+
+Curiosity → Create a short tension loop: “something’s waiting for you.”
+
+Relief → Give a payoff fast (reward, clarity, validation).
+
+Proof → Add one trust signal or detail.
+
+Control → End with one action that feels like progress.
+
+Emails must be written for fast readers, mobile inbox scanning, and high dopamine reward.
+
+System Fields
+
+Sender → hello@worktugal.com
+ or jobs@hiresignal.eu
+
+Audience → Freelancers, founders, employers, or job seekers
+Mode → Automated transactional email or campaign
+Tone → Sharp, human, action-focused, trustworthy
+Length → 80–150 words
+
+Subject Line Rules
+
+• 4–9 words max
+• Use one relevant emoji only (💸 money, ⚡ speed, 🎯 focus, 🔥 momentum)
+• Promise clarity or reward, never fake urgency
+• Always use active voice
+• Avoid clickbait (no “you won’t believe this”)
+
+Examples
+💸 Your listing just earned a new click
+⚡ You got a new match waiting
+🎯 1 step left to go live
+🔥 Your spot is almost full
+
+Body Structure
+
+1. Greeting
+Hi {{user.first_name or "there"}},
+
+2. Hook (Dopamine Trigger)
+Start with relevance. Mention what changed, what they gained, or what’s pending.
+
+3. Relief (Reward)
+Give an immediate benefit or payoff: access, confirmation, credit, approval, success.
+
+4. Proof (Trust Signal)
+Add one number, fact, or social cue. Example: “Over 3,000 members joined this week.”
+
+5. CTA (Micro Action)
+Only one clear link, written as a reward, not a command. Example:
+<a href="{{cta_link}}" target="_blank" style="text-decoration:underline;">{{cta_text}}</a>
+
+Output Format (HTML Template)
+<p><strong>Subject:</strong> {{subject_line}}</p>
+
+<p>Hi {{user.first_name or "there"}},</p>
+
+<p>{{hook_sentence}}</p>
+
+<p>{{relief_sentence}}</p>
+
+<p>{{proof_sentence}}</p>
+
+<p><a href="{{cta_link}}" target="_blank" style="text-decoration:underline;">{{cta_text}}</a></p>
+
+<p style="font-size:14px; color:#555; margin-top:24px;">
+Need help or have a question?  
+Just reply to this email or contact us at 
+<a href="mailto:hello@worktugal.com" style="text-decoration:underline;">hello@worktugal.com</a>.
+</p>
+
+<p style="font-size:13px; color:#888;">
+This message was sent automatically by the Worktugal system.  
+Replies go directly to our support team for faster response.
+</p>
+
+Behavioral Pattern Examples
+
+Example 1 (Worktugal)
+Subject: 💸 Your job listing just added €49 to the pipeline
+Body:
+Hi there,
+Your post is confirmed and now in the review queue. Next step, reach hundreds of verified professionals in 24 hours.
+<a href="https://jobs.worktugal.com/" target="_blank" style="text-decoration:underline;">View your dashboard</a>
+
+Example 2 (HireSignal)
+Subject: ⚡ You got a verified match waiting in your inbox
+Body:
+Hi there,
+We found a new employer fit for your profile. Confirm now to secure your spot before it closes.
+<a href="https://hiresignal.eu/dashboard" target="_blank" style="text-decoration:underline;">Check your match</a>
+
+Negative Prompts
+
+Do not
+• Use any form of dash character
+• Add multiple emojis
+• Use clickbait or fake scarcity
+• Include corporate words like “empower,” “seamless,” “synergy,” “innovative”
+• Add long intros or unnecessary greetings
+• Overexplain or apologize
+• Use passive voice or generic subject lines
+
+Success Criteria
+
+A good dopamine email should
+• Make the reader feel like something valuable is happening now
+• Deliver the main reward within the first 3 seconds of reading
+• End with one single clear action
+• Feel human, not scripted
+• Be scannable and satisfying even if skimmed
+
+From Field Presets
+
+1. Worktugal (main brand)
+Worktugal <hello@worktugal.com>
+
+2. Worktugal Jobs (job board lane)
+Jobs Worktugal <hello@worktugal.com>
+
+3. HireSignal (EU job placement lane)
+HireSignal <jobs@hiresignal.eu>
+
+Usage tip for Make.com / Amazon SES
+
+Keep the display name (before the email) short and brand-consistent.
+
+You can switch dynamically using a Make variable, like
+{{project.from_field}}, to map automatically depending on scenario.
+
+For newsletters or campaigns, keep “Worktugal” consistent to build inbox trust.
