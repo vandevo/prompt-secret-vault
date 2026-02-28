@@ -1,4 +1,4 @@
-# Prompt OS / Secret Vault v2.1
+# Prompt OS / Secret Vault v2.2
 
 ## Overview
 This is a **High-Fidelity Prompt Operating System** designed for a sovereign solopreneur. It transforms Cursor from a generic AI editor into a specialized execution engine (CEO, COO, Senior Engineer, and Marketing Director).
@@ -11,9 +11,9 @@ To initialize a session with maximum efficiency and zero cognitive drag, always 
 ## Directory Structure
 
 - `prompts/`
-  - `roles/`: Core identities (e.g., `ai-cofounder v3.2`, `unified-operator v3.0`).
+  - `roles/`: Core identities (e.g., `ai-cofounder v3.2`, `unified-operator v3.1`).
   - `tasks/`: Actionable engines (e.g., `solopreneur-engine v1.0`, `email-engine v1.1`).
-  - `knowledge/`: Grounding data (e.g., `stack-audit-2026`, `operator-truth v1.0`).
+  - `knowledge/`: Grounding data (e.g., `stack-audit-2026 v1.1`, `operator-truth v1.0`).
   - `tools/`: Workflow automation (e.g., `session-wrapup v1.1`, `thread-launcher v3.1`).
 - `archives/`: Versioned session handovers for context continuity.
 - `resources/`: Raw research, logs, and deep-dive materials.
@@ -22,7 +22,8 @@ To initialize a session with maximum efficiency and zero cognitive drag, always 
 - **Fast Model**: Gemini 3 Flash (Daily execution).
 - **Smart Model**: Gemini 3 Pro (Architecture/Logic).
 - **Senior Model**: Claude Opus 4.6 (Agentic coding/Refactors).
-- **Primary Stack**: Cloudflare Pages + Supabase (New) / WordPress + FluentCRM (Legacy).
+- **Primary Stack**: Cloudflare Pages (Static) + Supabase (Backend) + EmailOctopus (Marketing).
+- **Legacy Status**: WordPress and Google Cloud VM decommissioned.
 
 ## Maintenance & Update Protocol
 Whenever the system undergoes a structural change (new prompt, retired tech, model update), follow this protocol:
@@ -41,5 +42,5 @@ When the user says **"Update README"**, the Agent must:
 
 ---
 
-`VanOS v2.1 Ready`
+`VanOS v2.2 Ready`
 *Clarity. Control. Freedom.*
