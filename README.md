@@ -1,4 +1,4 @@
-# Prompt OS / Secret Vault v2.2
+# Prompt OS / Secret Vault v2.3
 
 ## Overview
 This is a **High-Fidelity Prompt Operating System** designed for a sovereign solopreneur. It transforms Cursor from a generic AI editor into a specialized execution engine (CEO, COO, Senior Engineer, and Marketing Director).
@@ -13,17 +13,17 @@ To initialize a session with maximum efficiency and zero cognitive drag, always 
 - `prompts/`
   - `roles/`: Core identities (e.g., `ai-cofounder v3.2`, `unified-operator v3.1`).
   - `tasks/`: Actionable engines (e.g., `solopreneur-engine v1.0`, `email-engine v1.1`).
-  - `knowledge/`: Grounding data (e.g., `stack-audit-2026 v1.1`, `operator-truth v1.0`).
+  - `knowledge/`: Grounding data (e.g., `stack-audit-2026 v1.2`, `dev-environment-wsl v1.1`).
   - `tools/`: Workflow automation (e.g., `session-wrapup v1.1`, `thread-launcher v3.1`).
 - `archives/`: Versioned session handovers for context continuity.
 - `resources/`: Raw research, logs, and deep-dive materials.
 
-## Technical Stack (Feb 2026)
+## Technical Stack (March 2026)
+- **Dev OS**: **WSL Ubuntu** (Sole development environment).
 - **Fast Model**: Gemini 3 Flash (Daily execution).
 - **Smart Model**: Gemini 3 Pro (Architecture/Logic).
 - **Senior Model**: Claude Opus 4.6 (Agentic coding/Refactors).
 - **Primary Stack**: Cloudflare Pages (Static) + Supabase (Backend) + EmailOctopus (Marketing).
-- **Legacy Status**: WordPress and Google Cloud VM decommissioned.
 
 ## Maintenance & Update Protocol
 Whenever the system undergoes a structural change (new prompt, retired tech, model update), follow this protocol:
@@ -42,5 +42,6 @@ When the user says **"Update README"**, the Agent must:
 
 ---
 
-`VanOS v2.2 Ready`
+`VanOS v2.3 Active`  
+**Contract**: `prompts/knowledge/dev-environment-wsl.md`  
 *Clarity. Control. Freedom.*

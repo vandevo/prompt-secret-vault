@@ -1,11 +1,11 @@
 ---
 title: "Stack Audit & Ecosystem Map"
-version: "1.1"
+version: "1.2"
 tags: ["knowledge", "tech-stack", "ops", "audit"]
 author: "Van"
-description: "Current operational snapshot of the Worktugal ecosystem. Reflects the full migration to Cloudflare Pages static infra and EmailOctopus decoupling."
+description: "Current operational snapshot of the Worktugal ecosystem. Reflects migration to WSL Ubuntu and static infra."
 model: "gemini-3-pro"
-last_updated: "2026-02-28"
+last_updated: "2026-03-01"
 ---
 
 # Operational Philosophy: "Headless & Sovereign"
@@ -14,12 +14,14 @@ We have successfully exited the Google Cloud VM/cPanel infrastructure to elimina
 - **Rule 2**: Database and Auth are **Supabase-First**.
 - **Rule 3**: All marketing automation is **Decoupled** from WordPress.
 - **Rule 4**: Data sovereignty is priority (Own the list, own the code, own the domain).
+- **Rule 5**: The only valid development environment is **WSL Ubuntu**.
 
 # 1. The Core Engines (Daily Drivers)
 
 | Category | Tool | Role/Status | Cost/Credits |
 | :--- | :--- | :--- | :--- |
-| **IDE / Brain** | **Cursor Pro** | **Primary OS.** Code, Prompts, Knowledge. | Paid |
+| **IDE / Brain** | **Cursor Pro** | **Primary OS.** Code, Prompts, Knowledge (WSL Instance). | Paid |
+| **OS (Dev)** | **WSL Ubuntu** | **Canonical Dev Environment.** No Windows-native dev allowed. | Free |
 | **Model (Fast)** | **Gemini 3 Flash** | Daily driver. Default model in Gemini app. | Free/API |
 | **Model (Smart)** | **Gemini 3 Pro** | Deep logic, architecture, complex refactors. | Free/API |
 | **Model (Senior)** | **Claude Opus 4.6** | Senior Engineer. Agentic coding, complex refactors. | Paid |
