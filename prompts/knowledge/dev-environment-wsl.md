@@ -1,9 +1,9 @@
 ---
 title: "Dev Environment Contract"
-version: "1.0"
+version: "1.1"
 tags: ["knowledge", "wsl", "environment", "contract"]
 author: "Van"
-description: "Single-environment development and Git workflow contract for WSL Ubuntu."
+description: "Operational infrastructure documentation for WSL Ubuntu development."
 model: "gemini-3-flash"
 ---
 
@@ -12,50 +12,48 @@ model: "gemini-3-flash"
 **Status**: Active  
 **Scope**: All repositories under `/home/vandevo/projects/`
 
-## Purpose
-Define the single development environment, Git workflow, and deployment source of truth to prevent dual-environment corruption.
+## 1. Environment Rules
 
-## Environment Rules
+- **Host**: All development must occur inside WSL Ubuntu.
+- **Path**: Valid root is `/home/vandevo/projects/`.
+- **C-Drive Restriction**: No active development allowed in Windows-native directories.
+- **De-duplication**: Duplicate repositories on Windows partitions must be deleted or archived.
 
-1. **WSL Only**: All development occurs inside WSL Ubuntu.
-2. **Valid Root**: The only valid working directory root is `/home/vandevo/projects/`.
-3. **No Windows Copies**: No active development is allowed in any Windows C drive copy.
-4. **Archive/Delete Duplicates**: If a duplicate Windows repo exists, it must be archived or deleted.
+## 2. Git Discipline
 
-## Git Discipline
+- **Context**: Execute all Git operations within the WSL terminal or Cursor WSL instance.
+- **Canonical Source**: GitHub is the singular source of truth.
+- **State Verification**:
+  - Run `git fetch --all` before starting work.
+  - Run `git status` to verify working tree state.
+  - Run `git branch` to confirm active branch before commit.
+- **Pre-Deploy**: Confirm local `HEAD` matches `origin/main`.
 
-1. **Inside WSL**: All Git operations must occur inside WSL.
-2. **GitHub is Canonical**: GitHub is the source of truth.
-3. **Disposable Local**: The local environment is disposable.
-4. **Pre-Change Routine**:
-   - `git fetch --all`
-   - `git status`
-5. **Pre-Deploy Check**:
-   - Confirm `HEAD` equals `origin/main`.
-   - No split-brain repository state allowed.
+## 3. Commit Workflow
 
-## Commit Workflow
+- **Requirements**:
+  - Use meaningful commit messages.
+  - Generic messages ("update", "fix", "changes") are prohibited.
+- **Authorized Tools**:
+  - Cursor Source Control (WSL)
+  - WSL terminal Git CLI
+- **Prohibited Tools**:
+  - GitHub Desktop (Windows)
+  - PowerShell/CMD Git CLI
 
-- **Allowed**:
-  - Cursor Source Control panel (inside WSL)
-  - WSL terminal git commands
-- **Not Allowed**:
-  - GitHub Desktop for WSL repositories
-  - Windows PowerShell git for Linux repos
+## 4. Deployment & State
 
-## Deployment Model
+- **Source**: Production deployment reads from GitHub `main`.
+- **Sync**: Cloudflare Pages syncs directly with GitHub.
+- **State**: Supabase serves as external state; code remains in Git.
+- **Redundancy**: Local machine failure must result in zero data loss on GitHub.
 
-1. **Source**: Production reads from GitHub `main`.
-2. **Automation**: Cloudflare pulls from GitHub.
-3. **State**: Supabase is external state, not source code.
-4. **Safety**: Local machine failure must not affect GitHub state.
+## 5. Risk Controls
 
-## Risk Controls
-
-- Never maintain two physical working copies of the same repo.
-- Never commit without reviewing diffs.
-- Never assume folder sync equals Git sync.
-- Always verify branch tracking.
+- **Diff Review**: Review `git diff` before every commit.
+- **Target Verification**: Verify target branch name before every push.
+- **HEAD State**: Never work on a detached `HEAD`.
+- **Isolation**: Never maintain two active physical copies of the same repository.
 
 ---
 **Contract active as of migration to WSL Ubuntu.**
