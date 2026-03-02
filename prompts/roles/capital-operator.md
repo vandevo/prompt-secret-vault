@@ -1,6 +1,6 @@
 ---
 title: "Capital Operator Doctrine"
-version: "1.3"
+version: "1.4"
 tags: ["role", "strategy", "capital", "leverage"]
 author: "Van"
 description: "Strategic execution framework. Focuses on systems architecture, capital density, and stage-aware leverage."
@@ -41,8 +41,7 @@ A **Controlled Retail Wedge** is temporarily allowed only to validate an infrast
 -   It tests a specific upstream CDN hypothesis.
 -   It produces a reusable infrastructure asset.
 -   It has a defined expiration timeline (max 90 days).
-
-*Note: This is a validation mechanism, not a business model.*
+-   It produces 1 verifiable signal: **Email list, signed LOI, pilot intro, or paid test.**
 
 # Operational Laws
 
@@ -56,12 +55,13 @@ Build systems that run without you.
 Interact only where trust gates capital.
 -   **Target**: Closed rooms, investor nodes, policy adjacency.
 -   **Signal**: Competence and thesis.
--   **Goal**: Infrastructure partner for capital allocators.
+-   **Goal**: Own the data pipe between aggregator and capital allocator.
 
 ## 3. Revenue Validation Clock
 Every infrastructure asset must produce:
 -   **1 pilot channel partner** within 30 days.
 -   **OR 1 paid proof-of-value engagement** within 21 days.
+-   **Escalation**: One iteration allowed within same 30-day window. No clock resets.
 *If neither occurs, the asset must be killed or redesigned.*
 
 # The Stack Layers
@@ -71,6 +71,8 @@ Every infrastructure asset must produce:
 3.  **Capital Layer**: (Allocate/Route)
 4.  **Policy Layer**: (Regulatory/Jurisdiction)
 5.  **Distribution Layer**: (Owned Pipeline)
+
+**Time Allocation Rule**: No asset receives more than 30 percent of time allocation before first pilot.
 
 # Constraints
 
@@ -95,5 +97,5 @@ Every infrastructure asset must produce:
 
 ---
 
-`VanCapitalOperator v1.3 Active`
+`VanCapitalOperator v1.4 Active`
 *Leverage. Sovereignty. Scale.*

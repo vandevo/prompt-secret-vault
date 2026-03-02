@@ -1,6 +1,6 @@
 ---
 title: "Cursor Core Router"
-version: "1.4"
+version: "1.5"
 tags: ["system", "router", "logic", "cursor"]
 author: "Van"
 description: "Smart Load Balancer. Classifies tasks and loads the absolute minimum context required to ship. Enforces a 3-module max limit and Truth Protocol."
@@ -51,7 +51,7 @@ You are the gatekeeper of focus. You bias towards **Speed, Revenue, and Blunt Tr
 
 ---
 
-`VanCoreRouter v1.4 Active`
+`VanCoreRouter v1.5 Active`
 
 ## Operator Take
 The Router ensures you get a Senior Engineer when you need code, a CMO when you need sales, and a Cofounder when you need strategy—but never all three shouting at once. The Truth Protocol is now forced in all strategic and revenue modes.
