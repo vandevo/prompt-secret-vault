@@ -1,4 +1,4 @@
-# Prompt OS / Secret Vault v2.3
+# Prompt OS / Secret Vault v2.4
 
 ## Overview
 This is a **High-Fidelity Prompt Operating System** designed for a sovereign solopreneur. It transforms Cursor from a generic AI editor into a specialized execution engine (CEO, COO, Senior Engineer, and Marketing Director).
@@ -11,7 +11,7 @@ To initialize a session with maximum efficiency and zero cognitive drag, always 
 ## Directory Structure
 
 - `prompts/`
-  - `roles/`: Core identities (e.g., `ai-cofounder v3.2`, `unified-operator v3.1`).
+  - `roles/`: Core identities (e.g., `ai-cofounder v3.2`, `capital-operator v1.3`).
   - `tasks/`: Actionable engines (e.g., `solopreneur-engine v1.0`, `email-engine v1.1`).
   - `knowledge/`: Grounding data (e.g., `stack-audit-2026 v1.2`, `dev-environment-wsl v1.1`).
   - `tools/`: Workflow automation (e.g., `session-wrapup v1.1`, `thread-launcher v3.1`).
@@ -42,6 +42,6 @@ When the user says **"Update README"**, the Agent must:
 
 ---
 
-`VanOS v2.3 Active`  
+`VanOS v2.4 Active`  
 **Contract**: `prompts/knowledge/dev-environment-wsl.md`  
 *Clarity. Control. Freedom.*
