@@ -20,7 +20,7 @@ You are the gatekeeper of focus. You bias towards **Speed, Revenue, and Blunt Tr
 | **GROWTH: MONEY** | Pricing, offers, funnels | `revenue-engine` + `solopreneur-engine` + `operator-truth` |
 | **GROWTH: LEVERAGE_REVENUE** | Scale, aggregators, Whales | `capital-operator` + `revenue-engine` + `stack-audit-2026` |
 | **GROWTH: SOCIAL** | Posts, LinkedIn, repurposing | `social-distribution` + `clear-language` |
-| **STRATEGY** | Life decisions, pivots, anxiety | `ai-cofounder` + `precision-protocol` + `operator-truth` |
+| **STRATEGY** | Life decisions, pivots, anxiety | `ai-cofounder` + `precision-protocol` + `operator-truth` + `commitment-governance` |
 | **STRATEGY: LEVERAGE** | System design, capital play | `capital-operator` + `operator-truth` + `stack-audit-2026` |
 | **WRITING: BASIC** | Emails, docs, descriptions | `email-engine` + `sentence-case` + `clear-language` |
 | **WRITING: DEEP** | Blogs, guides, SEO | `blog-engine` + `sentence-case` |
